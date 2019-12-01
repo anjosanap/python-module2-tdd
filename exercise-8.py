@@ -4,11 +4,16 @@ list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 2
 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82,
 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100]
 
-def number(list):
-    rest = list % 2
-    if rest == 0:
-        print("Number is even!")
-    else:
-        print("Number is odd!")
+def even(list):
+    for num in list: 
+        if num % 2 == 0: 
+            print(num, end = " ")
 
-print(number(list))
+def odd(list):
+    for num in list:
+        if num % 2 != 0:
+            print(num, end = " ")
+
+print("<-- Números pares", even(list))
+print(" ")
+print("<-- Número ímpares", odd(list))
