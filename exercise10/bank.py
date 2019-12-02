@@ -5,7 +5,7 @@ class Bank:
         self.menu()
 
     def menu(self):
-        print("Seja bem-vindo(a), {self.usuario.nome} ao New Bank! :)")
+        print(f"Seja bem-vindo(a), {self.usuario.nome} ao New Bank! :)")
         for chave,valor in self.opcoes.items():
             print("Digite ("+chave+")","para", valor)
         opcao = input(" ")
