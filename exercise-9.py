@@ -3,23 +3,24 @@ import re
 number = input("Digite o número do celular: ")
 
 ## Para validar se possui 9 digitos
-def digito(digito):
+def digit_is_valid(digito):
     digito = re.findall("9", number)
 
     if (digito):
-        print("Número válido! :)")
+        return True
     else:
-        print("Número inválido! :(")
+        return False
 
 ## Para validar se o numero comeca com 9
-def number(number):
-    x = re.search("^9", number)
+def number_is_valid(number):
+    number = re.search("^9", number)
     
-    if (x):
-        print("Número válido! :)")
+    if (number):
+        return True
     else:
-        print("Número inválido! :(")
+        return False
     
-resultado = number(number) + digito(digito)
-
-print(resultado)
+if digit_is_valid(number)  and number_is_valid(number):
+  print('Número válido! :)')
+else:
+  print('Número inválido! :(')  
