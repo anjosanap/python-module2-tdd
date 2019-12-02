@@ -1,13 +1,13 @@
+import math
+
 raio = int(input("Escreva o valor do raio: "))
 
-pi = 3.146
-
 def calculate_area(raio):
-    area  = (pi * (raio * raio))
+    area  = (math.pi * (raio * raio))
     return area
 
 def circle(raio):
-    circulo = (2 * pi * raio)
+    circulo = (2 * math.pi * raio)
     return circulo
 
 comprimento_circulo = circle(raio)
